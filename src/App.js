@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
+import Movies from './components/Movies';
 import './App.css';
+
+let movies = [
+  { title: 'Jurassic Park', id: 1 },
+  { title: 'Spiderman', id: 2 }
+]
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="navbar">
-          <h2>Nav bar</h2>
+          {/* <Navbar /> */}
         </div>
         <div className="sidebar">
-          <h2>side bar</h2>
+          <Movies movies={movies} />
         </div>
         <div className="main-content">
-          <h2>main content</h2>
+          {/* <Movie /> */}
         </div>
       </div>
     );
